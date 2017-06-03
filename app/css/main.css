@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Nova+Flat|Open+Sans|Quicksand");html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
 audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}
 [hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}
@@ -150,4 +150,4 @@ tr.visible-print{display:table-row !important}th.visible-print,td.visible-print{
 }.visible-print-block{display:none !important}@media print{.visible-print-block{display:block !important}
 }.visible-print-inline{display:none !important}@media print{.visible-print-inline{display:inline !important}
 }.visible-print-inline-block{display:none !important}@media print{.visible-print-inline-block{display:inline-block !important}
-}@media print{.hidden-print{display:none !important}}
+}@media print{.hidden-print{display:none !important}}body{font-size:16px;min-width:320px;position:relative;line-height:1.75;font-family:"Arial",sans-serif;color:black;overflow-x:hidden;opacity:1}
