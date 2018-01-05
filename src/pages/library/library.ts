@@ -8,7 +8,7 @@ import { QuotesPage} from '../quotes/quotes';
   templateUrl: 'library.html',
 })
 export class LibraryPage implements OnInit {
-  quoteCollection: {category: string, quote: Quote[], icon: string}[];
+  quoteCollection: {category: string, quotes: Quote[], icon: string}[];
   quotesPage = QuotesPage;
 
   public ngOnInit(): void {

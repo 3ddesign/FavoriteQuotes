@@ -19,7 +19,7 @@ export class QuotesPage implements OnInit {
     this.quoteGroup = this.navParams.data;
   }
 
-  public onAddToFavorite(selectedQuote: Quote): void {
+  public onAddToFavorites(selectedQuote: Quote): void {
     const alert = this.alertCtrl.create({
       title: 'Add Quote',
       subTitle: 'Are you sure?',
@@ -28,7 +28,7 @@ export class QuotesPage implements OnInit {
         {
           text: 'Yes',
           handler: () => {
-           this.quotesService.addQuoteToFavorites(selectedQuote);
+            this.quotesService.addQuoteToFavorites(selectedQuote);
           }
         },
         {
@@ -44,7 +44,11 @@ export class QuotesPage implements OnInit {
     alert.present();
   }
 
-  // ionViewDidLoad() {
-  //   this.quoteGroup = this.navParams.data;
-  // }
+  public onRemoveFromFavorites(quote: Quote): any {
+    this.quotesService.removeQuoteFromFavorites(quote);
+  }
+
+  public isFavorite(quote: Quote): any {
+    return this.quotesService.isQuoteFavorite(quote);
+  }
 }
