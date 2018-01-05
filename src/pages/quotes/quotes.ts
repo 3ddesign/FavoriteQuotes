@@ -35,7 +35,6 @@ export class QuotesPage implements OnInit {
           text: 'No',
           role: 'cancel',
           handler: () => {
-            console.log('No');
           }
         }
       ]
